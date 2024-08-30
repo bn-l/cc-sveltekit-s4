@@ -10,18 +10,17 @@
     "author": "{{ cookiecutter.author }}",
     "scripts": {
         "dev": "vite dev",
-        "build": "vite build && npm run package",
-        "preview": "vite preview",
+        "build": "vite build",
         "run:file": "tsx",
-        "package": "svelte-kit sync && svelte-package && publint",
-        "prepublishOnly": "npm run package",
-        "test": "npm run test:integration && npm run test:unit",
+        "preview": "vite preview",
+        "test": "npm run test:playwright && npm run test:unit",
         "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
         "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-        "test:integration": "playwright test",
+        "lint": "prettier --check . && eslint .",
+        "format": "prettier --write .",
+        "test:playwright": "playwright test",
         "test:unit": "vitest",
-        "lint": "prettier --check .",
-        "format": "prettier --write ."
+        "bump-version": "npx bumpp"
     },
     "devDependencies": {
         "@antfu/eslint-config": "^2.25.1",
