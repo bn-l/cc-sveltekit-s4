@@ -1,0 +1,2 @@
+
+for robots.txt and static assets like favicon.png. Served from the root.

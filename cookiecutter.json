@@ -1,0 +1,11 @@
+{
+    "project_name": "",
+    "project_slug": "{{ cookiecutter.project_name | slugify }}",
+    "private": true,
+    "author": "bn-l",
+    "description": "",
+    "__prompts__": {
+        "project_name": "Human readable name all lowercase. Converted automatically where needed",
+        "private": "Whether to start as a private project or not"
+    }
+}
