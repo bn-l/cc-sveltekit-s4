@@ -3,7 +3,6 @@
     "name": "{{ cookiecutter.project_slug }}",
     "version": "0.0.1",
     "private": {{ cookiecutter.private | lower }},
-    "private": true,
     "description": "{{ cookiecutter.description}}",
     "type": "module",
     "engines": {
